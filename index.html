@@ -9,7 +9,7 @@
       margin:0;
     }
 
-    a{text-decoration:none}
+    a{text-decoration:none; color: #4091f9;}
     
     h1, h2, h3, h4, h5, h6{
       margin:0 0 10px 0;
@@ -17,39 +17,17 @@
       font-weight:500;
     }
 
-    .features{
-        width:80%;
-        text-align:justify;
-        margin:20px auto 65px auto;
-    }
-    
-    table h3{
-        font-weight:bold;
-        color:#3aade6;
-    }
-    
-    .features tr{height:120px;}
-    
-    .features td{width:600px;}
-
-    .overlay{position:absolute; top: 0; left: 0; height: 100%; width: 100%; background-color:#212529; opacity:0.3;}
-
-    .clear{height:1px;clear:both;}
-
     .section{
-      border-bottom: 1px solid #efefef;
-      padding: 0 0 10px 10px;
-      position:relative;
-      height:650px;
       background-repeat:no-repeat;
-      background-size:cover;
-      text-align:center
+      background-size:100% auto;
+      text-align:center;
+      padding:1px 0;
     }
     
     .title{
       color: #fff;
       text-align: center;
-      font-size: 70px;
+      font-size: 3.5em;
       margin: 70px auto 0 auto;
       font-family: Recoleta, Georgia, "Times New Roman", Times, serif;
       font-weight:500;
@@ -67,150 +45,160 @@
 
     .create_button{
         width: 200px;
-        margin: 65px auto 25px auto;
+        margin: 65px auto;
         background-color: #fff;
         border-radius: 7px;
+        border:1px solid #b7b7b7;
         display: block;
         padding: 9px 1px;
         text-align: center;
         font-size: 21px;
         color:black;
-    }    
-
-    .welcome{
-      background-image: url("https://siasky.net/OABywQ7MLXjopUSvPo7NTs1eyJDt2QmX7IWLm_jRi8AC-g");
-    }
-
-    .ideas{
-      background-image: url("https://siasky.net/FABhCdcbwWEhb_-OsiJdd92rJa9KiGKLNxZElVmbFy763w");
-      background-position: 50% 47%;
+        cursor:pointer;
     }
     
-    .create{
-      background-image: url("https://siasky.net/KAA8-dWtMC8VsPV1XBQ41RWxuWEd9yywXLt4jhwGBtFmAA");
-      background-position: 50% 47%;
-      height:auto;
-    }
-    
-    .section img{
-      width: 675px;
-      margin: 30px 0 0 0px;
-      z-index: 10;
-      position: relative;
-    }
-
-    .power{height: 560px;}    
-    
-    .power .title, .power .subtitle{
-      color:#373737;
-    }
-    
-    .power .create_button{
+    .blue_button{
       background-color:#2665a8;
       color:#fff;
     }
+
+    .black{color:#000000;}
+
+    .white{color:#FFFFFF;}
+
+    .welcome{
+      /*background-image: url("img/network.jpg");*/
+      background-image: url("https://siasky.net/DADry2fQxMOROhPAnYUUKMpvy-buvF6RbvHRvSWPr63Bkg");
+    }
+
+    .ideas{
+      /*background-image: url("img/idea.jpg");*/
+      background-image: url("https://siasky.net/BADat6toE8aP4v1tdiePQPxDjTjr5R0_2c5wHJD7lqpvOw");
+    }
+
+    .create{
+      /*background-image: url("img/notebook.jpg");*/
+      background-image: url("https://siasky.net/FAAcGm2NyJDMb_madhpqGMFIMYAD0dkIKYAj0yDTqvS0GA");
+      background-position: 50% 47%;
+      background-size:cover;
+    }
+
+    .final{
+      /*background-image: url('img/fireworks.jpg');*/
+      background-image: url('https://siasky.net/HACRVKXSnyCVMnmiY1U6AYCMlOXLhU_8fAc1iXAZlaOf2g');
+      background-size:cover;
+      display:none;
+    }
+
+    .section img{
+      width: 675px;
+    }
+
+    .blog_creator{
+      text-align:left;
+      margin:50px auto 0 auto;
+      font-size:28px;
+      color:#fff;
+      max-width:60%;
+    }
+
+    .blog_creator input{
+      font-size:20px;
+      width:100%;
+    }
+
+    #dialog{ 
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color:black;
+      border: 1px solid #c3c3c3;
+      padding:15px 20px;
+      min-width: 200px;
+      color:#ffffff;
+      z-index: 1;
+      text-align: center;
+      display:none;
+    }
+
+    .namebase{
+      display:none;
+    }
+
+    .explanation{
+      color: white;
+      font-size: 20px;
+      background-color: #b96c6c;
+    } 
+
+    .explanation p {
+      padding:0px 20px;
+      text-align:justify;
+    }
+
+    .ol_final{
+      width:60%;
+      text-align:left;
+      margin:60px auto;
+      font-size:22px;
+      background-color: #0000008f;
+      padding: 5px;
+    }
+ 
+    .footer{
+      padding: 10px 30px;
+      background-color:#373737;
+      color:#fff;
+      text-align:right;
+    }
     
-  .blog_creator{
-    text-align:left;
-    margin:50px auto 0 auto;
-    font-size:28px;
-    color:#fff;
-    max-width:60%;
-  }
-  
-  .blog_creator input{
-    font-size:20px;
-    width:100%;
-  }
-  
-  #dialog{ 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:black;
-    border: 1px solid #c3c3c3;
-    padding:15px 20px;
-    min-width: 200px;
-    color:#ffffff;
-    z-index: 1;
-    text-align: center;
-    display:none;
-  }
-  
-  .namebase{
-    display:none;
-  }
-
-  .explanation{
-    color: white;
-    font-size: 20px;
-    background-color: #b96c6c;
-  }
-  
-  .explanation p {
-    padding:0px 20px;
-  }
-
   </style>
 </head>
 
 <body>
 <div id="dialog">Uploading Image</div>
 
-<div class="section welcome" >
-  <div class="overlay"></div>
-  <div style="position:relative;">
-    <div class="clear"></div>
-    <h1 class="title"> Welcome to your next decentralized blogging platform </h1>
-    <div class="subtitle"> Free, fast, and censorship-resistant, with no signup required. </div>
-    <a href="#create" class="create_button">Start your blog</a>
-    <img src="https://siasky.net/fAMNyqE3qA6NwrEBXpfP_6yoZ8npaeaejWtQ1t_KaDETiA">
+<div class="section welcome">
+  <h1 class="title white"> Welcome to your next decentralized blogging platform </h1>
+  <div class="subtitle white"> Free, fast, and censorship-resistant, with no signup required. </div>
+  <a href="#create" class="create_button">Start your blog</a>
+  
+  <!--<img src="img/entry.png">-->
+  <img src="https://siasky.net/fAMNyqE3qA6NwrEBXpfP_6yoZ8npaeaejWtQ1t_KaDETiA">
 
-  </div>
-</div>
-<div class="section power">
-  <div style="position:relative;">
-    <div class="clear" style="height:190px;"></div>
-    <h1 class="title"> Powered by the <span style="color:#57b560"> Sia </span> blockchain</h1>
-    <div class="subtitle">
+  <h1 class="title black"> Powered by the <span style="color:#57b560"> Sia </span> blockchain</h1>
+  <div class="subtitle black">
       Our blogs reside in sia, the world's leading decentralized cloud storage platform. Sia distributes 
       and stores your blog on nodes across the globe, making it fast to access, and impossible to take down.
-    </div>
-    <a href="#create" class="create_button">Start your blog</a>
   </div>
-</div>
-<div class="section ideas" >
-  <div class="overlay"></div>
-  <div style="position:relative;">
-    <div class="clear"></div>
-    <h1 class="title"> Blogging has never been easier </h1>
-    <div class="subtitle"> Seamlessly add new posts and publish your updated blog in the sia network.
-      And if you have a handshake domain, it gets automatically updated. Easy as 1, 2, 3.  </div>
-    <a href="#create" class="create_button">Start your blog</a>
-    <img src="https://siasky.net/fALyCr8iT5qDB1zSzMJ3YwGpySjeceJpp_PvZeUm469Y-Q">
-  </div>
+  <a href="#create" class="create_button blue_button">Start your blog</a>
 </div>
 
-<div class="section power" style="height:auto">
-  <div style="position:relative;">
-    <div class="clear" style="height:140px;"></div>
-    <h1 class="title"> A clean look for your blog </h1>
-    <div class="subtitle"> Based on the <a href="https://startbootstrap.com/previews/clean-blog/">clean blog</a>
-      theme from Bootstrap. Your blog will load fast, while staying stilish.
-    </div>
-    <div class="clear" style="height:60px;"></div>
-  </div>    
+<div class="section ideas" >
+  <h1 class="title white"> Having a decentralized blog has never been easier </h1>
+  <div class="subtitle white">
+    Create your blog and store it in the sia network in one step.
+  </div>
+  <a href="#create" class="create_button">Start your blog</a>
+  
+  <!--<img src="img/cats.png">-->
+  <img src="https://siasky.net/fALyCr8iT5qDB1zSzMJ3YwGpySjeceJpp_PvZeUm469Y-Q">
+  
+  <h1 class="title black"> A clean look for your blog </h1>
+  <div class="subtitle black">
+    Based on the <a href="https://startbootstrap.com/previews/clean-blog/">clean blog</a>
+    theme from Bootstrap. Your blog will load fast, while staying stilish.
+  </div>
+  <a href="#create" class="create_button blue_button">Start your blog</a>
 </div>
 
 <div class="section create" id="create" >
-  <div class="overlay"></div>
-  <div style="position:relative;">
-    <div class="clear"></div>
-    <h1 class="title"> Start your blog now </h1>
-    <div class="subtitle"> Choose a title, a description and an image for the header, we will do the rest  </div>
-    
-    <table class="blog_creator">
+  <h1 class="title"> Start your blog now </h1>
+  <div class="subtitle">
+    Choose a title, a description and an image for the header, we do the rest
+  </div>
+  <table class="blog_creator">
     <tr>
       <td>Blog Title:</td>
       <td><input class="ititle" id="ititle" placeholder="Blog Title"></td>
@@ -225,7 +213,7 @@
     </tr>
     <tr>
       <td>Update Handshake?</td>
-      <td><input type="checkbox" onclick="namebase_api()" id="ch_namebase"></td>
+      <td><input type="checkbox" onclick="use_namebase()" id="ch_namebase"></td>
     </tr>
     <tr class="namebase explanation">
       <td colspan=2><p> If you want your handshake domain to update automatically
@@ -254,58 +242,80 @@
       <td>Password:</td>
       <td><input id="password"></td>
     </tr>
-    </table>
-    <a onclick='create()' class="create_button">Create Blog</a>
-
+  </table>
+  <a onclick='create()' class="create_button">Create Blog</a>
   </div>
 </div>
 
-<script>
-  var background = ""
+<div class="section final white" id='final'>
+  <h1 class="title"> Congratulations! You are all set </h1>
+  <div class="subtitle"> Now, here is how to proceed. </div>
+  <div class="ol_final">
+    <ol>
+      <li id="gotoblog"></li>
+      <li> Click in the EDIT button (top right), and add your first post! </li>
+      <li> Publish it by clicking the PUBLISH button (top right) </li>
+      <li> The blog will publish itself on Sia, updating its handshake domain (if specified)</li>
+    </ol>
+  </div>
+</div>
 
+<footer class="footer">
+  Made by <a href="https://twitter.com/gagdiez">@gagdiez</a>,
+  powered by <a href="https://siasky.net">Skynet</a>
+  and <a href="https://www.namebase.io">Namebase</a>
+</footer>
+
+<script>
   var $ = function(id){return document.getElementById(id)}
 
-  $('ch_namebase').checked = false
+  // Maker elements
+  $('ch_namebase').checked = false  
+  var background = ""
+  
+  $('create').style.height = Math.max($('create').clientHeight, window.innerHeight) + "px"
+  $('final').style.height = Math.max($('final').clientHeight, window.innerHeight) + "px"
 
-  function namebase_api(){
+  function use_namebase(){
     let elems = document.querySelectorAll(".namebase");
     
-    for (let i=0; i<elems.length; i++) {
-      if ($('ch_namebase').checked){
-        elems[i].style.display = "table-row"
-      }else{
-        elems[i].style.display = "none"
-      }
+    for (let i=0; i<elems.length; i++){
+      if ($('ch_namebase').checked){elems[i].style.display = "table-row"}
+      else{elems[i].style.display = "none"}
     }
+    if ($('ch_namebase').checked){$('create').style.height = "auto"}
+    else{$('create').style.height = Math.max($('create').clientHeight, window.innerHeight) + "px"}
   }
 
+  // Create a new blog
   function create(){
-    let title = $('ititle').value
-    let about = $('iabout').value
-    let domain = $('domain').value
+    if (!$('ititle').value || !$('iabout').value){
+        // We need at least the title and about
+        $('ititle').style.borderColor = "red"
+        $('iabout').style.borderColor = "red"
+        return
+    }else{
+        $('ititle').style.borderColor = ""
+        $('iabout').style.borderColor = ""
+    }
+
     let access = $('access').value
     let secret = $('secret').value
     let password = $('password').value
     
     if(password){
+      // encrypt private keys
+      if(password.length < 30){alert("Please use a longer password"); return}
       access = CryptoJS.AES.encrypt(access, password).toString()
       secret = CryptoJS.AES.encrypt(secret, password).toString()
     }
 
-    var new_html = generate_new_blog(title, about, background, domain, access, secret)
-    upload_new_blog(new_html)
+    var new_html = generate_new_blog($('ititle').value, $('iabout').value, background,
+                                     $('domain').value, access, secret)
+    upload_to_skynet(new_html)
   }
 
-  function generateUUID() {
-    let uuid = ''
-    const cs = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-    for (let i = 0; i < 16; i++) {
-      uuid += cs.charAt(Math.floor(Math.random() * cs.length))
-    }
-    return uuid;
-  }
-
-  // Upload image
+  // Functions to upload header image to skynet
   $("fname").addEventListener('change', fselected, false)
 
   function fselected(){
@@ -324,31 +334,48 @@
     .then(response => response.json())
     .then(success => {$('dialog').style.display = "none",
                       background = 'https://siasky.net/' + success.skylink})
-    .catch(error => {alert("error, please try again"), $('img_uploading').style.display = "none"})
+    .catch(error => {alert("error, please try again"),
+                     $('dialog').style.display = "none"})
   }
-
-  function upload_new_blog(new_html){
     
-      var blob = new Blob([new_html], {type:"text/html; charset=UTF-8"})
+  // Function to upload html to skynet
+  function upload_to_skynet(new_html){
+    var blob = new Blob([new_html], {type:"text/html; charset=UTF-8"})
 
-      var formData = new FormData()
-      formData.append("file", blob)
+    var formData = new FormData()
+    formData.append("file", blob)
 
-      $('dialog').textContent = "Uploading to SIA, please wait..."
-      $('dialog').style.display = "block"
+    $('dialog').textContent = "Uploading to SIA, please wait..."
+    $('dialog').style.display = "block"
 
-      const uuid = generateUUID()
+    const uuid = generateUUID()
 
-      fetch('https://siasky.net/skynet/skyfile/'+uuid,
-                   {method:"POST", body:formData})
-      .then(response => response.json())
-      .then(result => $('dialog').innerHTML = "Your skylink: <a href='http://siasky.net/" + result.skylink + "'>+"+result.skylink+"</a>")
-      .catch(error => $('dialog').innerHTML = "Skynet: ERROR " + error)
+    fetch('https://siasky.net/skynet/skyfile/'+uuid,
+                 {method:"POST", body:formData})
+    .then(response => response.json())
+    .then(result => show_final_steps(result.skylink))
+    .catch(error => $('dialog').innerHTML = "Skynet: ERROR " + error)
   }
+
+  function show_final_steps(skylink){
+    $('dialog').style.display = "none"
+    $('gotoblog').innerHTML = "You can access your blog at: <a href='http://siasky.net/"+skylink+"'>http://siasky.net/"+skylink+"</a>"
+    $('final').style.display = "block"
+    $('final').style.height = window.innerHeight + "px"
+    location.href="#final"                   
+  }
+
+  function generateUUID() {
+    let uuid = ''
+    const cs = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+    for (let i = 0; i < 16; i++) {uuid += cs.charAt(Math.floor(Math.random() * cs.length))}
+    return uuid;
+  }
+
 
   function generate_new_blog(title, about, background, domain, access, secret){
-
-  return `
+    // The HTML of the blogs -> Improve this
+    return `
 <!DOCTYPE html>
 <html>
 <head>
@@ -516,7 +543,7 @@
       <button onclick="publish()"> Publish </button>
     </div>
 
-    <h1 class="blog_title"> ${title} </h1>
+    <h1 class="blog_title"> ${title}</h1>
     <div class="about">${about}</div>
   </div>
 </div>
@@ -628,6 +655,11 @@
         elems[i].style.display = "none"
       }
     }
+    
+    if(!access){
+      $('password').style.display = "none"
+    }
+    
   }
 
   function add_new_post(){
@@ -780,9 +812,9 @@
 
     upload_to_sia(new_web)
     .then(response => response.json())
-    .then(result => {$('upsky').innerHTML = "Skylink: " + result.skylink,
+    .then(result => {$('upsky').innerHTML = "New skylink: <a href='https://siasky.net/"+result.skylink+"'>"+result.skylink+"</a>",
                      update_dns(result.skylink, ak, sk)})
-    .catch(error => {$('upsky').innerHTML = "Skynet: ERROR " + error ,
+    .catch(error => {$('upsky').innerHTML = "Skylink: ERROR " + error ,
                      console.error("Error:", error)})
   }
 
@@ -844,7 +876,7 @@
 
   function close_dialog(id){$(id).style.display = "none"}
 
-  /*CryptoJS v3.1.2 code.google.com/p/crypto-js by Jeff Mott*/
+  // CryptoJS v3.1.2 code.google.com/p/crypto-js by Jeff Mott*/
   var CryptoJS=CryptoJS||function(u,p){var d={},l=d.lib={},s=function(){},t=l.Base={extend:function(a){s.prototype=this;var c=new s;a&&c.mixIn(a);c.hasOwnProperty("init")||(c.init=function(){c.$super.init.apply(this,arguments)});c.init.prototype=c;c.$super=this;return c},create:function(){var a=this.extend();a.init.apply(a,arguments);return a},init:function(){},mixIn:function(a){for(var c in a)a.hasOwnProperty(c)&&(this[c]=a[c]);a.hasOwnProperty("toString")&&(this.toString=a.toString)},clone:function(){return this.init.prototype.extend(this)}},
   r=l.WordArray=t.extend({init:function(a,c){a=this.words=a||[];this.sigBytes=c!=p?c:4*a.length},toString:function(a){return(a||v).stringify(this)},concat:function(a){var c=this.words,e=a.words,j=this.sigBytes;a=a.sigBytes;this.clamp();if(j%4)for(var k=0;k<a;k++)c[j+k>>>2]|=(e[k>>>2]>>>24-8*(k%4)&255)<<24-8*((j+k)%4);else if(65535<e.length)for(k=0;k<a;k+=4)c[j+k>>>2]=e[k>>>2];else c.push.apply(c,e);this.sigBytes+=a;return this},clamp:function(){var a=this.words,c=this.sigBytes;a[c>>>2]&=4294967295<<
   32-8*(c%4);a.length=u.ceil(c/4)},clone:function(){var a=t.clone.call(this);a.words=this.words.slice(0);return a},random:function(a){for(var c=[],e=0;e<a;e+=4)c.push(4294967296*u.random()|0);return new r.init(c,a)}}),w=d.enc={},v=w.Hex={stringify:function(a){var c=a.words;a=a.sigBytes;for(var e=[],j=0;j<a;j++){var k=c[j>>>2]>>>24-8*(j%4)&255;e.push((k>>>4).toString(16));e.push((k&15).toString(16))}return e.join("")},parse:function(a){for(var c=a.length,e=[],j=0;j<c;j+=2)e[j>>>3]|=parseInt(a.substr(j,
