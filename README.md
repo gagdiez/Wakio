@@ -1,5 +1,3 @@
-# microblog.sc
+# WIP - microblog.sc
 
-A descentralized microblogging system stored in skynet.
-
-WIP. Currently available in https://siasky.net/hns/bunnu/
+A descentralized microblogging system hosted in skynet. Currently available in https://siasky.net/hns/bunnu/
