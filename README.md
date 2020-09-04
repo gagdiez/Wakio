@@ -4,7 +4,10 @@
 
 Website: https://siasky.net/hns/wakio/
 
-Blog created using Wakio: https://siasky.net/hns/bunnu/
+Blogs created using Wakio:
+- https://siasky.net/hns/lunafromthemoon/
+- https://siasky.net/hns/aetheria/
+- https://siasky.net/hns/microblogsc/
 
 ## What is Wakio
 A decentralized blogging platform that lives in the sia blockchain. It allows to create self-contained decentralized blogs. This means that the blogs allow to create new posts, and publish them in skynet without the need of external tools. Furthermore, thanks to its integration with namespace's api (through my project https://github.com/gagdiez/skynet_handshake_api), the blogs can update their handshake domain.
