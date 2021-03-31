@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body>
   <title> Decentralized Blogging </title>
   <style>
     body{
@@ -19,7 +19,7 @@
 
     .section{
       background-repeat:no-repeat;
-      background-size:100% auto;
+      background-size:cover;
       text-align:center;
       padding:1px 0;
     }
@@ -28,7 +28,7 @@
       color: #fff;
       text-align: center;
       font-size: 3.5em;
-      margin: 70px auto 0 auto;
+      margin: 90px auto 0 auto;
       font-family: Recoleta, Georgia, "Times New Roman", Times, serif;
       font-weight:500;
       width:77%;
@@ -45,7 +45,7 @@
 
     .create_button{
         width: 200px;
-        margin: 65px auto;
+        margin: 80px auto 315px auto;
         background-color: #fff;
         border-radius: 7px;
         border:1px solid #b7b7b7;
@@ -60,6 +60,7 @@
     .blue_button{
       background-color:#2665a8;
       color:#fff;
+      margin: 80px auto;
     }
 
     .black{color:#000000;}
@@ -68,30 +69,35 @@
 
     .welcome{
       /*background-image: url("img/network.jpg");*/
-      background-image: url("https://siasky.net/DADry2fQxMOROhPAnYUUKMpvy-buvF6RbvHRvSWPr63Bkg");
+      background-image: url("/DADry2fQxMOROhPAnYUUKMpvy-buvF6RbvHRvSWPr63Bkg");
+      background-color: #333;
     }
 
     .ideas{
       /*background-image: url("img/idea.jpg");*/
-      background-image: url("https://siasky.net/BADat6toE8aP4v1tdiePQPxDjTjr5R0_2c5wHJD7lqpvOw");
+      background-image: url("/BADat6toE8aP4v1tdiePQPxDjTjr5R0_2c5wHJD7lqpvOw");
+      background-color: #333;
+      background-position: 50% 50%;
     }
 
     .create{
       /*background-image: url("img/notebook.jpg");*/
-      background-image: url("https://siasky.net/FAAcGm2NyJDMb_madhpqGMFIMYAD0dkIKYAj0yDTqvS0GA");
+      background-image: url("/FAAcGm2NyJDMb_madhpqGMFIMYAD0dkIKYAj0yDTqvS0GA");
       background-position: 50% 47%;
       background-size:cover;
+      background-color: #333;
     }
 
     .final{
       /*background-image: url('img/fireworks.jpg');*/
-      background-image: url('https://siasky.net/HACRVKXSnyCVMnmiY1U6AYCMlOXLhU_8fAc1iXAZlaOf2g');
+      background-image: url('/HACRVKXSnyCVMnmiY1U6AYCMlOXLhU_8fAc1iXAZlaOf2g');
       background-size:cover;
       display:none;
     }
 
     .section img{
       width: 675px;
+      margin:-220px auto 0 auto;
     }
 
     .blog_creator{
@@ -154,18 +160,19 @@
     }
     
   </style>
-</head>
 
-<body>
+
+
 <div id="dialog">Uploading Image</div>
 
 <div class="section welcome">
   <h1 class="title white"> Welcome to your next decentralized blogging platform </h1>
   <div class="subtitle white"> Free, fast, and censorship-resistant, with no signup required. </div>
   <a href="#create" class="create_button">Start your blog</a>
-  
+</div>
+<div class="section">
   <!--<img src="img/entry.png">-->
-  <img src="https://siasky.net/fAMNyqE3qA6NwrEBXpfP_6yoZ8npaeaejWtQ1t_KaDETiA">
+  <img src="/fAMNyqE3qA6NwrEBXpfP_6yoZ8npaeaejWtQ1t_KaDETiA">
 
   <h1 class="title black"> Powered by the <span style="color:#57b560"> Sia </span> blockchain</h1>
   <div class="subtitle black">
@@ -175,15 +182,16 @@
   <a href="#create" class="create_button blue_button">Start your blog</a>
 </div>
 
-<div class="section ideas" >
+<div class="section ideas">
   <h1 class="title white"> Having a decentralized blog has never been easier </h1>
   <div class="subtitle white">
     Create your blog and store it in the sia network in one step.
   </div>
   <a href="#create" class="create_button">Start your blog</a>
-  
+</div>
+<div class="section">  
   <!--<img src="img/cats.png">-->
-  <img src="https://siasky.net/fALyCr8iT5qDB1zSzMJ3YwGpySjeceJpp_PvZeUm469Y-Q">
+  <img src="/fALyCr8iT5qDB1zSzMJ3YwGpySjeceJpp_PvZeUm469Y-Q">
   
   <h1 class="title black"> A clean look for your blog </h1>
   <div class="subtitle black">
@@ -193,13 +201,13 @@
   <a href="#create" class="create_button blue_button">Start your blog</a>
 </div>
 
-<div class="section create" id="create" >
+<div class="section create" id="create" style="height: 978px;">
   <h1 class="title"> Start your blog now </h1>
   <div class="subtitle">
     Choose a title, a description and an image for the header, we do the rest
   </div>
   <table class="blog_creator">
-    <tr>
+    <tbody><tr>
       <td>Blog Title:</td>
       <td><input class="ititle" id="ititle" placeholder="Blog Title"></td>
     </tr>
@@ -209,45 +217,45 @@
     </tr>
     <tr>
       <td>Header Image:</td>
-      <td><input class="ititle" type="file" id="fname" ></td>
+      <td><input class="ititle" type="file" id="fname"></td>
     </tr>
     <tr>
-      <td>Update Handshake?</td>
+      <td style="/*! width: 395px; */">Use Handshake domain:</td>
       <td><input type="checkbox" onclick="use_namebase()" id="ch_namebase"></td>
     </tr>
-    <tr class="namebase explanation">
-      <td colspan=2><p> If you want your handshake domain to update automatically
+    <tr class="namebase explanation" style="display: none;">
+      <td colspan="2"><p> If you want your handshake domain to update automatically
         you will need to include your access key and secret key from namebase.
         Using a password that you choose, we will encrypt both keys using the
         AES algorithm, and embed them into your blog. Then, at the moment of
         publishing the blog, you will have to input the password, the keys will
         be decrypted, we will contact namebase API and update the handshake
-        domain. PLEASE DO USE A SECURE PASSWORD (>30 characters), otherwise your
+        domain. PLEASE DO USE A SECURE PASSWORD (&gt;30 characters), otherwise your
         keys (and your funding!) could be compromised.</p>
       </td>
     </tr>
-    <tr class="namebase">
+    <tr class="namebase" style="display: none;">
       <td>Domain:</td>
       <td><input id="domain"></td>
     </tr>
-    <tr class="namebase">
-      <td>Access Key:</td>
+    <tr class="namebase" style="display: none;">
+      <td>Access Key (Optional):</td>
       <td><input id="access"></td>
     </tr>
-    <tr class="namebase">
-      <td>Secret Key:</td>
+    <tr class="namebase" style="display: none;">
+      <td>Secret Key (Optional):</td>
       <td><input id="secret"></td>
     </tr>
-    <tr class="namebase">
-      <td>Password:</td>
+    <tr class="namebase" style="display: none;">
+      <td>Blog Password (Optional):</td>
       <td><input id="password"></td>
     </tr>
-  </table>
-  <a onclick='create()' class="create_button">Create Blog</a>
+  </tbody></table>
+  <a onclick="create()" class="create_button">Create Blog</a>
   </div>
-</div>
 
-<div class="section final white" id='final'>
+
+<div class="section final white" id="final" style="height: 662px;">
   <h1 class="title"> Congratulations! You are all set </h1>
   <div class="subtitle"> Now, here is how to proceed. </div>
   <div class="ol_final">
@@ -262,8 +270,8 @@
 
 <footer class="footer">
   Made by <a href="https://twitter.com/gagdiez">@gagdiez</a>,
-  powered by <a href="https://siasky.net">Skynet</a>
-  and <a href="https://www.namebase.io">Namebase</a>
+  powered by <a href="">Skynet</a>
+  and <a href="https://www.namebase.io/">Namebase</a>
 </footer>
 
 <script>
@@ -329,11 +337,11 @@
     var formData = new FormData()
     formData.append("file", file)
 
-    fetch('https://siasky.net/skynet/skyfile/'+uuid,
+    fetch('/skynet/skyfile/'+uuid,
           {method:"POST", body:formData})
     .then(response => response.json())
     .then(success => {$('dialog').style.display = "none",
-                      background = 'https://siasky.net/' + success.skylink})
+                      background = '/' + success.skylink})
     .catch(error => {alert("error, please try again"),
                      $('dialog').style.display = "none"})
   }
@@ -345,24 +353,24 @@
     var formData = new FormData()
     formData.append("file", blob)
 
-    $('dialog').textContent = "Uploading to SIA, please wait..."
+    $('dialog').textContent = "Creating your blog, please wait..."
     $('dialog').style.display = "block"
 
     const uuid = generateUUID()
 
-    fetch('https://siasky.net/skynet/skyfile/'+uuid,
+    fetch('/skynet/skyfile/'+uuid,
                  {method:"POST", body:formData})
     .then(response => response.json())
     .then(result => show_final_steps(result.skylink))
-    .catch(error => $('dialog').innerHTML = "Skynet: ERROR " + error)
+    .catch(error => $('dialog').innerHTML = "Error: " + error)
   }
 
   function show_final_steps(skylink){
     $('dialog').style.display = "none"
-    $('gotoblog').innerHTML = "You can access your blog at: <a href='http://siasky.net/"+skylink+"'>http://siasky.net/"+skylink+"</a>"
+    $('gotoblog').innerHTML = "You can access your blog at: <a href='/"+skylink+"'>/"+skylink+"</a>"
     $('final').style.display = "block"
     $('final').style.height = window.innerHeight + "px"
-    location.href="#final"                   
+    location.href="#final"
   }
 
   function generateUUID() {
@@ -390,7 +398,7 @@
       cursor: pointer;
       color: #3c70c6;
     }
-
+    
     .about{
       color: #fff;
       font-weight: 300;
@@ -409,6 +417,9 @@
     }
 
     body{
+      display: flex;
+      flex-direction:column;
+
       font-family: "Times New Roman", serif;
       font-size: 20px;
       margin:0;
@@ -416,10 +427,14 @@
 
     .clear{height:1px;clear:both;}
 
+    #content{
+        min-height: calc(100vh - 495px);
+    }
+
     .delete{
       float: right;
-      color: red;
-      margin: 15px 0 0 0;
+      color: #6373ce;
+      margin: 30px 0 0 25px;
       font-size: 18px;
       font-weight:300;
       cursor:pointer;
@@ -453,6 +468,11 @@
       background-position:50%;
       background-repeat:no-repeat;
       background-size:cover;
+    }
+
+    iframe{
+        width:100%;
+        height:480px;
     }
 
     .overlay{
@@ -543,8 +563,8 @@
       <button onclick="publish()"> Publish </button>
     </div>
 
-    <h1 class="blog_title"> ${title}</h1>
-    <div class="about">${about}</div>
+    <h1 class="blog_title" id="blog_title" contenteditable="false"> ${title}</h1>
+    <div class="about" id="blog_about" contenteditable="false">${about}</div>
   </div>
 </div>
 
@@ -558,24 +578,88 @@
   <h4 style="margin:10px 0;">Add Image</h4>
   <a style="position:absolute; top:10px; right:15px;" onclick="close_dialog('add_img')"> [x] close </a>
 
-  URL: <input type="text" id="lname"/><button onclick="img_from_url()">Add</button>
+  URL: <input type="text" id="img_url"/><button onclick="img_from_url()">Add</button>
   <br>or<br>
-  Upload: <input type="file" id="fname"/>
+  Upload: <input type="file" id="img_file" accept="image/*" />
   <br>
   <div id="img_uploading" style="display:none; text-align:center;">... Uploading ...</div>
+</div>
+
+<div id="add_video" class="dialog">
+  <h4 style="margin:10px 0;">Add Video</h4>
+  <a style="position:absolute; top:10px; right:15px;" onclick="close_dialog('add_video')"> [x] close </a>
+
+  URL: <input type="text" id="video_url"/> <button onclick="video_from_url()">Add</button>
+  <br>Supports Youtube, Vimeo, and Youku<br>
+  <br>
+  or Upload: <input type="file" id="video_file" accept="video/*"/>
+  <br>
+  <div id="video_uploading" style="display:none; text-align:center;">... Uploading ...</div>
 </div>
 
 <div class="post edit" style="display:none">
   <h2><input id="title" placeholder="Post Title"></h2>
   <div id="editor" class="pell"></div>
   <div id="html-output" style="display:none;"></div>
-  <button onclick="add_new_post()" class="add">Add post</button>
+  <button onclick="add_new_post()" class="add" id="add_btn">Add post</button>
+  <button onclick="update_post()" class="add" style="display:none;" id="update_btn">Update</button>
 </div>
 
 <div id="content">
+<div class="post" id="1">
+  <a class="delete edit" style="display:none" onclick="delete_post(1)"> DELETE 🗑️</a>
+  <a class="delete edit" style="display:none" onclick="modify_post(1)"> MODIFY ✏️</a>
+  <h2 class="title" id="tit_1">Welcome to your blog</h2>
+  <h5 class="published"></h5>
+  <div class="text" id="txt_1" style="max-height: none;">
+    <img src="/OAC9cI9mtclloRkYivjI83B98NaDJ01iyllrEUQ43APxmw">
+    <br>
+    Hi, welcome to your decentralized blog hosted in the sia network, this is an example post.
+    In order to delete it, and start writing your blog, use the Edit button in the top-right corner.
+    <br><br>
+    
+    In edit mode, you can delete posts, but also add new ones using our what you see is what you get
+    editor. The editor will allow you to create rich posts. While formatting each post, you may need to
+    emphasize or distinguish words. For this you can use <b>bold</b>, <i>italics</i>, <u>underline</u>, or
+    <strike>strike-through</strike>.
+    <br><br>
+    
+    <h2>Using headings to separate sections</h2>
+    Heading allow to separate a post in different sections. This makes it easier to express ideas
+    by grouping them in different subtopics.
+
+    <br><br>
+
+    The editor also allows to create lists. The lists can be ordered, or unordered.
+    <ol>
+      <li>To create an ordered list, use the <i>#</i> button</li><li>Start adding elements</li><li>As simple as 1, 2, 3</li>
+    </ol>
+   
+    In contrast with ordered lists, unordered lists are composed by bullet points
+    <ul>
+      <li><strike>Create your blog</strike><br></li><li>Edit it, and delete the example posts</li><li>Create your own</li>
+    </ul>
+      
+    <h2>Links and Images</h2>
+    You can add links in your posts. Imagine you are talking about an interesting project,
+    and such projects happens to have a website. Well, you can add a link <a href="https://sia.tech">to their website</a>! Add as many
+    links to interesting <a href="https://namebase.io">websites</a> as you need.
+ 
+    <br><br>
+          
+    Finally, you can link an image from an external web, or upload one from your computer. All the
+    images will automatically be updated to the sia network and added to the post.
+    <br><br>
+          
+    That's it, you are ready to start, happy blogging!
+    </div>
+   <div class="show_more" id="sm_1"></div>
+</div>
+
 
 </div>
-<div id ="pages" class="post" style="overflow-x:scroll;"></div>
+
+<div id ="pages" class="post" style="overflow-x:auto;"></div>
 
 <script>
   // Namebase related variables
@@ -591,8 +675,12 @@
   // Blog setup
   const NELEMS = 4
   let current_page = 1
-  $("fname").addEventListener('change', fselected, false)
+  var post_to_modify
+  
+  $("img_file").addEventListener('change', upload_image, false)
+  $("video_file").addEventListener('change', upload_video, false)
   $('password').addEventListener('keyup', function onEvent(e){if (e.keyCode === 13) {publish()}})
+  document.title = $('blog_title').textContent
 
   // BLOG NAVIGATION ------
   function create_pages(){
@@ -634,6 +722,8 @@
       // If the post is too long, show a "show more" button
       if($('txt_'+child.id).scrollHeight > $('txt_'+child.id).clientHeight){
         $('sm_'+child.id).innerHTML = "<a onclick='toggle("+child.id+")'>---- Show more ----</a>"
+      }else{
+        $('sm_'+child.id).textContent = ""
       }
     }
     current_page = page
@@ -659,6 +749,9 @@
     if(!access){
       $('password').style.display = "none"
     }
+
+    $('blog_title').setAttribute('contenteditable', !$('blog_title').contenteditable)
+    $('blog_about').setAttribute('contenteditable', !$('blog_about').contenteditable)
     
   }
 
@@ -682,8 +775,9 @@
     date = date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear()
 
     // Create HTML of the post
-    let post_cnt = "<a class='delete edit' onclick='delete_post("+new_id+")'>DELETE POST</a> \
-                    <h2 class='title'>"+title+"</h2><h5 class='published'>"+date+"</h5> \
+    let post_cnt = "<a class='delete edit' onclick='delete_post("+new_id+")'>DELETE 🗑️</a> \
+                    <a class='delete edit' onclick='modify_post("+new_id+")'>MODIFY ✏️</a> \
+                    <h2 class='title' id='tit_"+new_id+"'>"+title+"</h2><h5 class='published'>"+date+"</h5> \
                     <div class='text' id='txt_"+new_id+"'>"+text+"</div> \
                     <div class='show_more' id='sm_"+new_id+"'></div>";
 
@@ -704,10 +798,49 @@
     create_pages()
   }
 
+  // Modify post
+  function modify_post(id){
+    // hide add button, show update button
+    $("add_btn").style.display = "none"
+    $("update_btn").style.display = "block"
+    post_to_modify = id
+
+    pell_content.innerHTML = $("txt_"+id).innerHTML
+    $('html-output').textContent = $("txt_"+id).innerHTML
+    $("title").value = $("tit_"+id).innerHTML
+
+    location.href = "#title"
+  }
+  
+  function update_post(){
+    $("tit_"+post_to_modify).textContent = $("title").value
+    $("txt_"+post_to_modify).innerHTML = $("html-output").textContent
+    $("add_btn").style.display = "block"
+    $("update_btn").style.display = "none"
+    location.href = "#tit_"+post_to_modify
+    
+    post_to_modify = -1
+    pell_content.innerHTML = ""
+    $('html-output').textContent = ""
+    $("title").value = ""
+    
+    show_page(current_page)  
+  }
+
   // Deleting a post is removing it from the DOM
   function delete_post(id){
+     
+    let last = $(id) == $("content").children.item($("content").children.length-1)
+    
     $("content").removeChild($(id))
+    
     create_pages()
+    
+    if (last && ($("content").children.length % NELEMS == 0)){
+      current_page -= 1
+    }
+
+    show_page(current_page)
   }
 
   // Toggle and collapse a post
@@ -739,7 +872,7 @@
 
     const uuid = generateUUID()
 
-    return fetch('https://siasky.net/skynet/skyfile/'+uuid,
+    return fetch('/skynet/skyfile/'+uuid,
                  {method:"POST", body:formData})
   }
 
@@ -757,7 +890,7 @@
     opts = {method:'PUT', body:data,
             headers:{'Content-Type':'application/json'}}
 
-    fetch('https://skynet-namespace.glitch.me/', opts)
+    fetch('https://wakio.glitch.me/', opts)
     .then(result => result.json())
     .then(result => {if ("success" in result && result.success){
                        $('upnbs').innerHTML = "Namebase: Done. The domain should be updated in 30 minutes or less"
@@ -793,6 +926,15 @@
     let pell_content = document.getElementsByClassName('pell-content')[0]
     let tmp_html_output = $('html-output').textContent
     let tmp_pages = $('pages').innerHTML
+
+    // Make sure add post is shown, and modify is hidden
+    $("add_btn").style.display = "block"
+    $("update_btn").style.display = "none"
+
+    // Remove editable from title and about
+    $('blog_title').setAttribute('contenteditable', false)
+    $('blog_about').setAttribute('contenteditable', false)
+
     edit_switch()
 
     $('editor').innerHTML = ""
@@ -812,14 +954,14 @@
 
     upload_to_sia(new_web)
     .then(response => response.json())
-    .then(result => {$('upsky').innerHTML = "New skylink: <a href='https://siasky.net/"+result.skylink+"'>"+result.skylink+"</a>",
+    .then(result => {$('upsky').innerHTML = "New skylink: <a href='/"+result.skylink+"'>"+result.skylink+"</a>",
                      update_dns(result.skylink, ak, sk)})
     .catch(error => {$('upsky').innerHTML = "Skylink: ERROR " + error ,
                      console.error("Error:", error)})
   }
 
-  /* PELL 1.0.5 https://github.com/jaredreich/pell by Jared Reich */
-  !function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"function"==typeof define&&define.amd?define(["exports"],e):e(t.pell={})}(this,function(t){"use strict";var e=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t},c="defaultParagraphSeparator",l="formatBlock",a=function(t,e,n){return t.addEventListener(e,n)},s=function(t,e){return t.appendChild(e)},d=function(t){return document.createElement(t)},n=function(t){return document.queryCommandState(t)},f=function(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:null;return document.execCommand(t,!1,e)},p={bold:{icon:"<b>B</b>",title:"Bold",state:function(){return n("bold")},result:function(){return f("bold")}},italic:{icon:"<i>I</i>",title:"Italic",state:function(){return n("italic")},result:function(){return f("italic")}},underline:{icon:"<u>U</u>",title:"Underline",state:function(){return n("underline")},result:function(){return f("underline")}},strikethrough:{icon:"<strike>S</strike>",title:"Strike-through",state:function(){return n("strikeThrough")},result:function(){return f("strikeThrough")}},heading1:{icon:"<b>H<sub>1</sub></b>",title:"Heading 1",result:function(){return f(l,"<h1>")}},heading2:{icon:"<b>H<sub>2</sub></b>",title:"Heading 2",result:function(){return f(l,"<h2>")}},paragraph:{icon:"&#182;",title:"Paragraph",result:function(){return f(l,"<p>")}},quote:{icon:"&#8220; &#8221;",title:"Quote",result:function(){return f(l,"<blockquote>")}},olist:{icon:"&#35;",title:"Ordered List",result:function(){return f("insertOrderedList")}},ulist:{icon:"&#8226;",title:"Unordered List",result:function(){return f("insertUnorderedList")}},code:{icon:"&lt;/&gt;",title:"Code",result:function(){return f(l,"<pre>")}},line:{icon:"&#8213;",title:"Horizontal Line",result:function(){return f("insertHorizontalRule")}},link:{icon:"&#128279;",title:"Link",result:function(){var t=window.prompt("Enter the link URL");t&&f("createLink",t)}},image:{icon:"&#128247;",title:"Image",result:function(){var t=window.prompt("Enter the image URL");t&&f("insertImage",t)}}},m={actionbar:"pell-actionbar",button:"pell-button",content:"pell-content",selected:"pell-button-selected"},r=function(n){var t=n.actions?n.actions.map(function(t){return"string"==typeof t?p[t]:p[t.name]?e({},p[t.name],t):t}):Object.keys(p).map(function(t){return p[t]}),r=e({},m,n.classes),i=n[c]||"div",o=d("div");o.className=r.actionbar,s(n.element,o);var u=n.element.content=d("div");return u.contentEditable=!0,u.className=r.content,u.oninput=function(t){var e=t.target.firstChild;e&&3===e.nodeType?f(l,"<"+i+">"):"<br>"===u.innerHTML&&(u.innerHTML=""),n.onChange(u.innerHTML)},u.onkeydown=function(t){var e;"Enter"===t.key&&"blockquote"===(e=l,document.queryCommandValue(e))&&setTimeout(function(){return f(l,"<"+i+">")},0)},s(n.element,u),t.forEach(function(t){var e=d("button");if(e.className=r.button,e.innerHTML=t.icon,e.title=t.title,e.setAttribute("type","button"),e.onclick=function(){return t.result()&&u.focus()},t.state){var n=function(){return e.classList[t.state()?"add":"remove"](r.selected)};a(u,"keyup",n),a(u,"mouseup",n),a(e,"click",n)}s(o,e)}),n.styleWithCSS&&f("styleWithCSS"),f(c,i),n.element},i={exec:f,init:r};t.exec=f,t.init=r,t.default=i,Object.defineProperty(t,"__esModule",{value:!0})});  
+  /* PELL 1.0.6 https://github.com/jaredreich/pell by Jared Reich */
+  !function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"function"==typeof define&&define.amd?define(["exports"],e):e(t.pell={})}(this,function(t){"use strict";var e=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t},c="defaultParagraphSeparator",l="formatBlock",a=function(t,e,n){return t.addEventListener(e,n)},s=function(t,e){return t.appendChild(e)},d=function(t){return document.createElement(t)},n=function(t){return document.queryCommandState(t)},f=function(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:null;return document.execCommand(t,!1,e)},p={bold:{icon:"<b>B</b>",title:"Bold",state:function(){return n("bold")},result:function(){return f("bold")}},italic:{icon:"<i>I</i>",title:"Italic",state:function(){return n("italic")},result:function(){return f("italic")}},underline:{icon:"<u>U</u>",title:"Underline",state:function(){return n("underline")},result:function(){return f("underline")}},strikethrough:{icon:"<strike>S</strike>",title:"Strike-through",state:function(){return n("strikeThrough")},result:function(){return f("strikeThrough")}},heading1:{icon:"<b>H<sub>1</sub></b>",title:"Heading 1",result:function(){return f(l,"<h1>")}},heading2:{icon:"<b>H<sub>2</sub></b>",title:"Heading 2",result:function(){return f(l,"<h2>")}},paragraph:{icon:"&#182;",title:"Paragraph",result:function(){return f(l,"<p>")}},quote:{icon:"&#8220; &#8221;",title:"Quote",result:function(){return f(l,"<blockquote>")}},olist:{icon:"&#35;",title:"Ordered List",result:function(){return f("insertOrderedList")}},ulist:{icon:"&#8226;",title:"Unordered List",result:function(){return f("insertUnorderedList")}},code:{icon:"&lt;/&gt;",title:"Code",result:function(){return f(l,"<pre>")}},line:{icon:"&#8213;",title:"Horizontal Line",result:function(){return f("insertHorizontalRule")}},link:{icon:"&#128279;",title:"Link",result:function(){var t=window.prompt("Enter the link URL");t&&f("createLink",t)}},image:{icon:"&#128247;",title:"Image",result:function(){var t=window.prompt("Enter the image URL");t&&f("insertImage",t)}}},m={actionbar:"pell-actionbar",button:"pell-button",content:"pell-content",selected:"pell-button-selected"},r=function(n){var t=n.actions?n.actions.map(function(t){return"string"==typeof t?p[t]:p[t.name]?e({},p[t.name],t):t}):Object.keys(p).map(function(t){return p[t]}),r=e({},m,n.classes),i=n[c]||"div",o=d("div");o.className=r.actionbar,s(n.element,o);var u=n.element.content=d("div");return u.contentEditable=!0,u.className=r.content,u.oninput=function(t){var e=t.target.firstChild;e&&3===e.nodeType?f(l,"<"+i+">"):"<br>"===u.innerHTML&&(u.innerHTML=""),n.onChange(u.innerHTML)},u.onkeydown=function(t){var e;"Enter"===t.key&&"blockquote"===(e=l,document.queryCommandValue(e))&&setTimeout(function(){return f(l,"<"+i+">")},0)},s(n.element,u),t.forEach(function(t){var e=d("button");if(e.className=r.button,e.innerHTML=t.icon,e.title=t.title,e.setAttribute("type","button"),e.onclick=function(){return t.result()&&u.focus()},t.state){var n=function(){return e.classList[t.state()?"add":"remove"](r.selected)};a(u,"keyup",n),a(u,"mouseup",n),a(e,"click",n)}s(o,e)}),n.styleWithCSS&&f("styleWithCSS"),f(c,i),n.element},i={exec:f,init:r};t.exec=f,t.init=r,t.default=i,Object.defineProperty(t,"__esModule",{value:!0})});
 
   const editor = pell.init({
     element: $('editor'),
@@ -832,46 +974,81 @@
                result: () => pell.exec('formatBlock', '<h3>')},
               'olist', 'ulist', 'line', 'link',
               {name:'image', icon:'🖼️', title:'Image',
-               result: () => {$("add_img").style.display = "block"}}]
+               result: () => {$("add_img").style.display = "block"}},
+              {name:'image', icon:'🎬', title:'Video',
+               result: () => {$("add_video").style.display = "block"}}]
   })
 
+  var pell_content = document.getElementsByClassName('pell-content')[0]
+  pell_content.addEventListener("focusout", function(){save_focus()})
+  pell_content.addEventListener("focus", function(){load_focus()})
+
+  var sel = document.getSelection();
+  saved = [sel.focusNode, sel.focusOffset]
+    
+  function save_focus(){
+    saved = [sel.focusNode, sel.focusOffset]
+  }
+  
+  function load_focus(){
+    sel.collapse(saved[0], saved[1]);
+  }
+
+  function upload_file_and_run(file, func){
+    const uuid = generateUUID()
+
+    var formData = new FormData()
+    formData.append("file", file)
+
+    fetch('/skynet/skyfile/'+uuid,
+          {method:"POST", body:formData})
+    .then(response => response.json())
+    .then(success => func("/"+success.skylink))
+    .catch(error => console.log(error))
+  }
+
+  function img_from_url(){pell_add_image($("img_url").value)}
+  
   function pell_add_image(url){
-    // Wrapper around "pell insertImage" to fix some small errors
-    let pell_content = document.getElementsByClassName('pell-content')[0]
-    if (document.activeElement != pell_content){
-      pell_content.innerHTML += "<img src='"+url+"'>"
-      $('html-output').textContent = pell_content.innerHTML
-    }
-    else{pell.exec('insertImage', url)}
+    if(!url){return}
+    pell_content.focus()
+    pell.exec('insertImage', url)
 
     // Close dialog
     $('img_uploading').style.display = "none"
     close_dialog("add_img")
   }
 
-  function img_from_url(){
-    // Add image from dialog-URL
-    let url = $("lname").value
-    pell_add_image(url)
-    $("add_img").style.display = "none"
-  }
-
-  function fselected(){
+  function upload_image(){
     // Add image from dialog-upload
     $('img_uploading').style.display = "block"
+    let file = $('img_file').files[0]
+    upload_file_and_run(file, pell_add_image)
+  }
 
-    let file = $('fname').files[0]
+  function pell_add_video(url){
+    if(!url){return}
+    pell_content.focus()
+    let iframe = '<br><iframe height="100%" width="100%" src="'+url+'" frameborder="0" allowfullscreen></iframe><br><br>'
+    pell.exec('insertHTML', iframe)
+    
+    // Close dialog
+    $('video_uploading').style.display = "none"
+    close_dialog("add_video")
+  }
 
-    const uuid = generateUUID()
-
-    var formData = new FormData()
-    formData.append("file", file)
-
-    fetch('https://siasky.net/skynet/skyfile/'+uuid,
-          {method:"POST", body:formData})
-    .then(response => response.json())
-    .then(success => pell_add_image("https://siasky.net/"+success.skylink))
-    .catch(error => console.log(error))
+  function video_from_url(){
+    var url = $("video_url").value
+    url = url.replace("youtube.com/watch?v=", "youtube.com/embed/")
+    url = url.replace("vimeo.com", "player.vimeo.com/video")
+    url = url.replace("v.youku.com/v_show/id_", "player.youku.com/embed/")
+    pell_add_video(url)
+  }
+  
+  function upload_video(){
+    $('video_uploading').style.display = "block"
+    let file = $('video_file').files[0]
+    upload_file_and_run(file, pell_add_video)
   }
 
   function close_dialog(id){$(id).style.display = "none"}
@@ -941,5 +1118,6 @@
 
 </script>
 
-</body>
-</html>
+
+
+</body></html>
